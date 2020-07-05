@@ -1,0 +1,6 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "nim": "cd $dir && nim cpp --hint[Processing]:off -o:$dir/out $fileName && cat input | $dir/out",
+    }
+}
