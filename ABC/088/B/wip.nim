@@ -7,7 +7,6 @@ template rep(p: untyped, n: int): seq = newSeqWith(n, p)
 let
   n = read()
 
-
 var
   a : SinglyLinkedRing[int] = initSinglyLinkedRing[int]()
   alice: seq[int]
