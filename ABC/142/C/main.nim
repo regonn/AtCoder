@@ -8,14 +8,14 @@ let
     n = read()
     a = read().rep(n)
 var
-    temp_a = a
+    rev = a
 
-for index in 1..n:
-    let current_min_value = min(temp_a)
-    let current_min_value_index = a.find(current_min_value)
-    temp_a.del(temp_a.find(current_min_value))
-    stdout.write (current_min_value_index + 1)
-    if index != n:
+for index in 0..(n-1):
+    rev[a[index] - 1]= index+1;
+
+for index in 0..(n-1):
+    stdout.write (rev[index])
+    if index != (n-1):
         stdout.write " "
     else:
         echo ""
