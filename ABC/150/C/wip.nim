@@ -11,8 +11,8 @@ let
 
 proc cal_lesser_count(x: seq): int =
     var 
-        counts: seq[int]
-        numbers: seq[int]
+        counts: seq
+        numbers: seq
 
     for index in 0..(n-1):
         counts.add(index)    
